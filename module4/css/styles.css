@@ -1,0 +1,18 @@
+h2 {
+    color: white;
+    background-color: red;
+    font-family: Aerial, “Comic Sans”, Calibri;
+}
+
+#container{
+    color: yellow;
+}
+
+.accent {
+    background-color: yellow;
+    color: black;
+}
+
+body main div {
+ color: white;
+}

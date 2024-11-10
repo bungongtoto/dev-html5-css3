@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Embedded style sheets-->
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h2 {
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
     <header></header>
@@ -11,7 +22,17 @@
     <nav><a href="index.html">Home</a></nav>
 
     <main>
+        <!--Inline styles-->
         <h1 style="color: green; background-color: yellow;">Module 4</h1>
+        <h2 style="background-color: blue;" >This is an example of the externall stylesheet</h2>
+
+        <p id="container">this is an example of paragraph element with ID set to container</p>
+
+        <h3 class="accent">this is the accented heading</h3>
+        <p class="accent">this is accented paragraph element</p>
+
+        <div id="divelement">this is the <span class="accent">descendent</span> div</div>
+
     </main>
 
     <footer></footer>
