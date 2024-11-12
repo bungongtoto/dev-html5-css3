@@ -1,0 +1,36 @@
+body {
+    background-image: linear-gradient(skyblue, white);
+}
+
+header img {
+    width: 100%; /*this stretches the image base on the image viewport*/
+    height: auto; /*the height will change based on the size of the viewport*/
+}
+
+
+nav {
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+main {
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+footer {
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+    border-radius: 1em;
+}
+
+
+
