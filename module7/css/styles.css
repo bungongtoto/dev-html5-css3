@@ -1,0 +1,91 @@
+body {
+    background-image: linear-gradient(white, black);
+}
+
+header img {
+    width: 30%; /*this stretches the image base on the image viewport*/
+    height: auto; /*the height will change based on the size of the viewport*/
+}
+
+
+nav {
+    background-color: white;
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li {
+    background-color: black;
+    padding: 1em;
+    min-width: 12%;
+    margin: 0.25em;
+    list-style-type: none;/*This removes the bullets points from the list*/
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /*this removes the decoration from the hyerlink*/
+}
+
+main {
+    background-color: white;
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: white;
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+    border-radius: 1em;
+}
+
+/*Begin Mobile*/
+@media screen  and (max-width: 639px) {
+    nav ul li {
+        border-radius: 1em;
+    }
+}
+/*End Mobile*/
+
+
+/*Begin Tablet*/
+@media screen  and (min-width: 640px) {
+    nav ul li {
+        display: inline-block; /*this list items horizontally and allows them to stretch*/
+        border-radius: 1em;
+    }
+}
+/*End Tablet*/
+
+
+/*Begin Desktop*/
+@media screen  and (min-width: 960px) {
+
+    header img {
+        width: auto;
+        height: 5em;
+    }
+    nav {
+        margin-top: -5em; /*this moves the nav element above where it should normally be.*/
+        width: 60%;
+        float: right; /*this floats the nav elements to the right side of the page*/
+    }
+    nav ul li {
+        display: inline-block; /*this list items horizontally and allows them to stretch*/
+        border-radius: 1em;
+    }
+}
+/*End Desktop*/
