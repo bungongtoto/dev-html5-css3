@@ -1,0 +1,36 @@
+/*Begin Tablet*/
+@media screen and (min-width: 641px) and (max-width: 960px ) {
+
+    body header img {
+        width: 50%;
+        height: auto;
+    }
+   
+    nav ul li {
+        display: inline-block;
+        /*this list items horizontally and allows them to stretch*/
+        border-radius: 1em;
+        box-shadow: 0.3em 0.3em 0.3em rgb(220, 6, 6);
+    }
+    main {
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+
+    main div .center{
+        padding: 10px;
+        width: 55%;
+
+        border-right: 0.3em solid black;
+    }
+
+    figure {
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+
+
+
+   .desktop{
+    display: none;
+   }
+
+}
