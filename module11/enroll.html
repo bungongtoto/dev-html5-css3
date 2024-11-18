@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Enroll Page</title>
+
+    <script type="text/javascript" >
+        function calculate() {
+            var course = 0;
+            var uniforms = 0;
+            var total = 0;
+
+            if (document.getElementById('adult').checked) {
+                course = 50;
+            } else if (document.getElementById('teen').checked) {
+                course = 100;
+            } else if(document.getElementById('child').checked) {
+                course = 150;
+            }
+
+            uniforms = 50 * document.getElementById("uniforms").value;
+            total = course + uniforms;
+
+            alert("Your Total Cost is: $"+ total)
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="media/images/image.png" alt="martial Arts Dojo logo">
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="classes.html">Classes</a>
+            </li>
+            <li>
+                <a href="enroll.html">Enroll</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="firstname">First Name</label></td>
+                    <td><input type="text" id="firstname" name="firstname"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="lastname">Last Name</label></td>
+                    <td><input type="text" id="lastname" name="lastname"></td>
+                </tr>
+
+                <tr>
+                    <td> <label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone">Phone</label></td>
+                    <td> <input type="tel" id="phone" name="phone"></td>
+                </tr>
+            </table>
+
+            <table id="enrollprice">
+                <caption>Enroll</caption>
+                <tr>
+                    <td>Adult</td>
+                    <td>$50</td>
+                    <td><input type="radio" id="adult" name="course" value="50" ></td>
+                </tr>
+
+                <tr>
+                    <td>Teen</td>
+                    <td>$100</td>
+                    <td><input type="radio" id="teen" name="course" value="100"></td>
+                </tr>
+
+                <tr>
+                    <td>Child</td>
+                    <td>$150</td>
+                    <td><input type="radio" id="child" name="course" value="150"></td>
+                </tr>
+
+                <tr>
+                    <td>Uniforms</td>
+                    <td>$50</td>
+                    <td><input type="number" id="uniforms" min="0" value="0"></td>
+                </tr>
+            </table>
+
+           <p> <input type="submit" name="submit" id="submit" value="submit" onclick="calculate()" ></p>
+            <input type="reset" name="reset" id="reset" value="reset">
+        </form>
+
+
+    </main>
+    <footer>
+        <p>Martial Arts<br><a href="mailto:owner@anybusiness.abc">owner@anybusiness.abc</a></p>
+    </footer>
+</body>
+
+</html>
