@@ -1,0 +1,47 @@
+
+
+main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+table {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin: 2.5%;
+    background-color: black;
+}
+
+table caption {
+    border: 0.1em solid black;
+    background-color: black; 
+    padding: 1em; 
+}
+
+table caption input {
+    text-align: right;
+    font-size: 2.5em;
+    height: 3em;
+    font-weight: bold;
+    
+}
+
+table tbody {
+    width: 100%;
+}
+
+th, td  {
+   border: 0.1em solid black;
+   padding: 0.5em;
+   text-align: center;
+   background-color: black;
+}
+
+input {
+    width: 95%;
+    height: 3em;
+    font-size: 2em;
+}

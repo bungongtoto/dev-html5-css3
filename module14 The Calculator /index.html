@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>The Calculator App</title>
+
+    <script src="scripts/calculator.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+
+        <input id="operation" value="0" type="hidden" > <!--These hidden input contains our data-->
+        <input id="operand" value="" type="hidden" > <!--This will store the first number in-->
+        <input type="hidden" name="equivalent" id="equivalent" value="0" >
+        <input id="decimalVar" value="0" type="hidden" >
+
+        <table>
+            <caption><input type="text" name="result" id="result" value="0" readonly></caption>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <input id="allclear" type="button" value="ac" onclick="allClear()">
+                    </td>
+                    <td>
+                        <input id="square" type="button" value="x&sup2;" onclick="square()">
+                    </td>
+                    <td>
+                        <input id="percent" type="button" value="%" onclick="percent()">
+                    </td>
+                    <td>
+                        <input id="divide" type="button" value="&divide;" onclick="operators(4)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input id="nine" type="button" value="9" onclick="input(9)">
+                    </td>
+                    <td>
+                        <input id="eight" type="button" value="8" onclick="input(8)">
+                    </td>
+                    <td>
+                        <input id="seven" type="button" value="7" onclick="input(7)">
+                    </td>
+                    <td>
+                        <input id="multiply" type="button" value="&cross;" onclick="operators(3)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input id="six" type="button" value="6" onclick="input(6)">
+                    </td>
+                    <td>
+                        <input id="five" type="button" value="5" onclick="input(5)">
+                    </td>
+                    <td>
+                        <input id="four" type="button" value="4" onclick="input(4)">
+                    </td>
+                    <td>
+                        <input id="subtract" type="button" value="&minus;" onclick="operators(2)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input id="three" type="button" value="3" onclick="input(3)">
+                    </td>
+                    <td>
+                        <input id="two" type="button" value="2" onclick="input(2)">
+                    </td>
+                    
+                    <td>
+                        <input id="one" type="button" value="1" onclick="input(1)">
+                    </td>
+                    <td>
+                        <input id="add" type="button" value="&plus;" onclick="operators(1)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input id="plusminus" type="button" value="&PlusMinus;" onclick="plusminus()">
+                    </td>
+                    <td>
+                        <input id="zero" type="button" value="0" onclick="input(0)">
+                    </td>
+                    <td>
+                        <input id="decimal" type="button" value="." onclick="decimalPoint()">
+                    </td>
+                    <td>
+                        <input id="equals" type="button" value="=" onclick="equals()">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
